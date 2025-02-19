@@ -14,8 +14,11 @@
       function showBrowserWidth() {
         const width = window.innerWidth;
 
-        document.querySelector;
+        document.querySelector("h1").innerText = `width: ${width}`;
       }
+
+      window.onload = showBrowserWidth;
+      window.onresize = showBrowserWidth;
     </script>
   </body>
 </html>
